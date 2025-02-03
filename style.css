@@ -3,10 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 html {
     height: 100%;
-    /* overflow-x: hidden; */
 }
+
 body {
     width: 100vw;
     height: 100vh;
@@ -19,55 +20,70 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: overlay;
 }
-/* CABEÇA  */
-.cabeçalho{
-    align-items: center;
-    justify-content: center;
-    position: relative;
+
+/* CABEÇA */
+.cabeçalho {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    position: relative;
 }
-.cabeçalho h1{
+
+.cabeçalho h1 {
     color: white;
-    font-size: calc(5vw + 5vh);
+    font-size: calc(5vw + 2vh);
     font-family: "Poppins", serif;
     font-weight: 150;
-    font-style: normal;
-    position: absolute;
-    top: 20%;
-    left: 10%;
     margin-bottom: 2rem;
 }
-.cabeçalho img{  
-    width: 1920px;
-    height: 1080px;
-    backface-visibility: hidden;
+
+.cabeçalho img {
+    max-width: 100%;
+    height: auto;
     opacity: 0.2;
 }
-.icone01{
+
+.icone01, .icone02 {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 20%;
-    left: 75%;
-    position: absolute;
-    
+    position: relative;
+    margin: 1rem;
 }
-.icone01 i{
-    font-size: 200px;
+
+.icone01 i, .icone02 i {
+    font-size: 10vw;
     color: white;
 }
-.icone02{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 20%;
-    left: 85%;
-    position: absolute;
+
+/* PARTE RESPONSIVA DO CABEÇALHO */
+@media (max-width: 768px) {
+    .cabeçalho h1 {
+        font-size: calc(4vw + 2vh);
+        top: 10%;
+        left: 5%;
+    }
+
+    .icone01, .icone02 {
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .icone01 i, .icone02 i {
+        font-size: 15vw;
+    }
 }
-.icone02 i{
-    font-size: 200px;
-    color: white;
+
+@media (max-width: 480px) {
+    .cabeçalho h1 {
+        font-size: calc(3vw + 2vh);
+    }
+
+    .icone01 i, .icone02 i {
+        font-size: 12vw;
+    }
 }
-/* ============================ */
+/* ======================================= */
