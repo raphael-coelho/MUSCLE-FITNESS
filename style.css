@@ -21,69 +21,99 @@ body {
     background-blend-mode: overlay;
 }
 
-/* CABEÇA */
+/* CABEÇALHO */
 .cabeçalho {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
     position: relative;
+    height: 40vh; /* Ajuste dinâmico para diferentes telas */
 }
 
 .cabeçalho h1 {
     color: white;
-    font-size: calc(5vw + 2vh);
+    font-size: clamp(10rem, 5vw, 5rem); 
     font-family: "Poppins", serif;
     font-weight: 150;
-    margin-bottom: 2rem;
+    text-align: center;
+    position: absolute;
+    top: 1rem;
+    margin-top: 2rem;
 }
 
 .cabeçalho img {
     max-width: 100%;
     height: auto;
-    opacity: 0.2;
+    opacity: 0.1;
 }
 
+/* ÍCONES */
 .icone01, .icone02 {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    margin: 1rem;
+    position: absolute;
+    top: 1rem;
+}
+
+.icone01 {
+    left: 2rem;
+}
+
+.icone02 {
+    right: 2rem;
 }
 
 .icone01 i, .icone02 i {
-    font-size: 10vw;
+    font-size: 5vw;
     color: white;
 }
 
-/* PARTE RESPONSIVA DO CABEÇALHO */
+/* RESPONSIVIDADE */
 @media (max-width: 768px) {
+    .cabeçalho {
+        height: 30vh;
+    }
+
     .cabeçalho h1 {
-        font-size: calc(4vw + 2vh);
-        top: 10%;
-        left: 5%;
+        font-size: clamp(1.5rem, 4vw, 3rem);
     }
 
     .icone01, .icone02 {
-        top: 10%;
-        left: 50%;
-        transform: translateX(-50%);
+        top: 1rem;
+        left: auto;
+        right: auto;
+        transform: none;
+    }
+
+    .icone01 {
+        left: 1rem;
+    }
+
+    .icone02 {
+        right: 1rem;
     }
 
     .icone01 i, .icone02 i {
-        font-size: 15vw;
+        font-size: 8vw;
+    }
+
+    body {
+        background-attachment: scroll;
     }
 }
 
 @media (max-width: 480px) {
     .cabeçalho h1 {
-        font-size: calc(3vw + 2vh);
+        font-size: clamp(1.2rem, 3vw, 2.5rem);
+    }
+
+    .icone01, .icone02 {
+        top: 0.5rem;
     }
 
     .icone01 i, .icone02 i {
-        font-size: 12vw;
+        font-size: 10vw;
     }
 }
-/* ======================================= */
