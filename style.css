@@ -117,3 +117,11 @@ body {
         font-size: 10vw;
     }
 }
+/* ================================================= */
+/* IMAGEM DAS ESTEIRAS */
+.img-01 img{
+    display: block;
+    border: 2px solid white;
+    border-radius: 20%;
+    width: 40rem;
+}
