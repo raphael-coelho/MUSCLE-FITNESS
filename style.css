@@ -12,13 +12,13 @@ body {
     width: 100vw;
     height: 100vh;
     min-height: 100vh;
-    background-image: url(./IMG/background.jpg);
+    background-image: url(./IMG/body-background.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: center center;
-    background-attachment: fixed;
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: overlay;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* CABEÇALHO */
@@ -28,14 +28,14 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 40vh; /* Ajuste dinâmico para diferentes telas */
+    height: 40vh; 
 }
 
 .cabeçalho h1 {
     color: white;
-    font-size: clamp(10rem, 5vw, 5rem); 
-    font-family: "Poppins", serif;
-    font-weight: 150;
+    font-family: "Josefin Sans", serif;
+    font-size: clamp(4rem, 8vw, 8rem); /* Ajuste responsivo */
+    font-weight: 450;
     text-align: center;
     position: absolute;
     top: 1rem;
@@ -44,6 +44,7 @@ body {
 
 .cabeçalho img {
     max-width: 100%;
+    width: 100%;
     height: auto;
     opacity: 0.1;
 }
@@ -55,6 +56,8 @@ body {
     align-items: center;
     position: absolute;
     top: 1rem;
+    font-size: 5vw;
+    color: white;
 }
 
 .icone01 {
@@ -65,9 +68,28 @@ body {
     right: 2rem;
 }
 
-.icone01 i, .icone02 i {
-    font-size: 5vw;
-    color: white;
+/* IMAGENS DAS ESTEIRAS */
+.img-01 img {
+    display: flex;
+    border: 2px solid white;
+    border-radius: 20%;
+    width: 100%;
+    max-width: 30rem; 
+    height: auto;
+    margin-left: 10%; 
+    box-shadow: 10px 5px 5px white;
+    
+}
+
+.img-02 img {
+    display: block;
+    border: 2px solid white;
+    border-radius: 20%;
+    width: 100%;
+    max-width: 30rem; 
+    height: auto;
+    margin-left: 25%; 
+    box-shadow: 10px 5px 5px blueviolet;
 }
 
 /* RESPONSIVIDADE */
@@ -82,9 +104,7 @@ body {
 
     .icone01, .icone02 {
         top: 1rem;
-        left: auto;
-        right: auto;
-        transform: none;
+        font-size: 8vw;
     }
 
     .icone01 {
@@ -93,10 +113,6 @@ body {
 
     .icone02 {
         right: 1rem;
-    }
-
-    .icone01 i, .icone02 i {
-        font-size: 8vw;
     }
 
     body {
@@ -111,17 +127,6 @@ body {
 
     .icone01, .icone02 {
         top: 0.5rem;
-    }
-
-    .icone01 i, .icone02 i {
         font-size: 10vw;
     }
-}
-/* ================================================= */
-/* IMAGEM DAS ESTEIRAS */
-.img-01 img{
-    display: block;
-    border: 2px solid white;
-    border-radius: 20%;
-    width: 40rem;
 }
