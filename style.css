@@ -130,3 +130,29 @@ body {
         font-size: 10vw;
     }
 }
+@media (min-width: 480px) and (max-width: 768px){
+    .img-01 img, .img-02 img{
+        height: auto;
+    }
+}
+/* =========================== */
+/* botao de pesquisa  */
+.botao-pesquisa{
+    width: 200px;    
+    height: auto;
+}
+.botao-pesquisa{                                          background-color: #007BFF; 
+    color: white; 
+    padding: 15px 30px; 
+    font-size: 18px; 
+    border: none;          border-radius: 5px; 
+    cursor: pointer; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease; 
+}
+.botao-pesquisa:hover {
+    background-color: #0056b3; 
+}
+.botao-pesquisa:active {
+    background-color: #004080; 
+}
