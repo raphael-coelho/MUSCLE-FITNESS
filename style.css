@@ -5,11 +5,17 @@
 }
 body{
   background-color: white;
+  background-image: url(./IMG/bg-02.jpg);
+  /* background-size: cover; */
+  /* background-position: center;  */
+  /* background-repeat: no-repeat;  */
+  width: 100%;
+
 }
 header{
     background-color: white;
     height: 7.5rem;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); */
 }
 /*🟢 BARRA DE NAVEGAÇÃO 🟢*/
 header #navbar{
@@ -17,9 +23,14 @@ header #navbar{
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
-    max-width: 120rem;
+    max-width: 125rem;
     margin: 0 auto;
     height: 7.5rem;
+    background-image: url("./IMG/bg-01.jpg");
+    background-size: cover; /* Faz a imagem cobrir todo o espaço */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    width: 100%;
 }
 header #navbar .nav-list{
     list-style: none;
@@ -37,10 +48,10 @@ header #navbar .nav-list .nav-item a{
     transition: all 0.5s ease;
 }
 header #navbar .nav-list .nav-item a:hover{
-    background-color: rgb(255, 230, 3);
+    background-color: slategrey;
     border-radius: 2rem;
 }
-/* ⛔ FIM ⛔*/
+/* ⛔  ⛔*/
 /*🟢 IMAGEM E BANNER INICIAL 🟢*/
 main{
     margin-top: 6rem;
@@ -48,17 +59,23 @@ main{
 main #banner{
     display: flex;
     justify-content: flex-end;
-    /* align-items: center; */
-    height: 90vh;
+    align-items: center; 
+    height: 80vh;
     padding: 0 2rem;
     margin: 0 auto;
+    border-radius: 15rem;
+    box-shadow: 3px 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
-main #banner img{
-    
-    
+main #banner {
+    background-image: url("./IMG/bg-01.jpg");
+    background-size: cover; /* Faz a imagem cobrir todo o espaço */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    width: 100%; /* Faz o banner ocupar toda a largura */
 }
 main #banner .banner-content .banner-content-title {
     font-size: 6rem;
+    margin: 2rem 0 3rem 5rem;
     font-weight: 700;
     font-family: "Iceberg", sans-serif;
     color: black;
@@ -68,6 +85,108 @@ main #banner .banner-content .banner-content-subtitle{
     font-size: 3rem;
     font-weight: 400;
     color: black;
-    margin-bottom: 2rem;
+    margin: 2rem 0 3rem 5rem;
     font-family: "Dosis", sans-serif;;
 }
+/* RESPONSIVIDADE BANNER E  NAVBAR */
+@media (max-width: 1400px){
+    /* main #banner {
+        width: 90%; 
+        max-width: 1200px;
+  } */
+  main #banner .banner-content .banner-content-title{
+        margin-left: 20rem;
+        font-size: 3rem;
+  }
+  main #banner .banner-content .banner-content-subtitle{
+        margin-left: 20rem;
+        font-size: 5rem;
+  }
+  @media (max-width: 1100px){
+    main #banner .banner-content .banner-content-title{
+        margin-left: 10rem;
+        font-size: 2rem;
+  }
+    main #banner .banner-content .banner-content-subtitle{
+        margin-left: 10rem;
+        font-size: 3rem;
+    }
+}
+@media (max-width: 820px){
+    main #banner{
+        flex-wrap: wrap;
+    }
+  }
+  @media (max-width: 480px){
+    header #navbar .nav-list{
+        display: none;
+    }
+  }
+
+}
+/* ⛔  ⛔ */
+
+/* 🟢PLANOS E MENSALIDADE🟢 */
+main #banner .banner-content-ad {
+    /* background-color: slategray; */
+    color: black;
+    padding: 1rem; /* Aumentado para melhor espaçamento interno */
+    border-radius: 2rem;
+    font-size: 2.7rem;
+    font-family: "Exo 2", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Garante que tudo fique centralizado */
+    max-width: 15rem; /* Aumentado para caber os textos */
+    height: fit-content; /* Ajusta conforme o conteúdo */
+    text-align: center;
+    overflow: hidden;
+}
+main #banner .banner-content-ad{
+    margin: 25rem 0 3rem 5rem;
+    color: white;   
+    padding: 1rem;
+    border-radius: 2rem;
+    font-size: 2.7rem;
+    font-family: "Exo 2", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main #banner .banner-content-ad:hover {
+    background-color: #333;
+    color: white;
+}
+main #banner .banner-content-ad-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: "Iceberg", sans-serif;
+    color: whitesmoke;
+    margin-bottom: 0.5rem;
+}
+
+main #banner .banner-content-ad-subtitle {
+    font-size: 4rem;
+    font-weight: 400;
+    transition: transform 0.3s ease-in-out;
+    font-family: "iceberg", sans-serif;
+    animation: pulsar 4s infinite;
+}
+@keyframes pulsar {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+
+
+/* ⛔  ⛔*/
+
