@@ -10,6 +10,7 @@ body{
   background-position: center;  
   background-repeat: no-repeat;  
   width: 100%;
+   
 }
 header{
     background-color: white;
@@ -199,6 +200,15 @@ main #banner .banner-content-ad-subtitle {
 }
 /*⛔                   ⛔*/
 /*🟢 BOTÃO DE PESQUISA 🟢*/
+main .lupa img {
+    width: 6rem;
+    height: auto;
+    position: absolute;
+    top: 45%;
+    left: 44%;
+    margin-top: 36.5rem;
+    transform: translate(-360%, -10%);
+}
 main .botao-container {
     display: flex;
     flex-direction: column;
@@ -225,7 +235,7 @@ main .botao-container .botao-pesquisa button {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    position: absolute;
+    position: relative;
 }
 
 main .botao-container .botao-pesquisa button:hover {
@@ -251,3 +261,8 @@ main .botao-container .botao-imagem img:hover {
     opacity: 1;
     transform: scale(1.02);
 }
+
+
+
+/*⛔                   ⛔*/
+/*🟢 CARD DE IMAGENS 🟢*/
