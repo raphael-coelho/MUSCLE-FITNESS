@@ -8,14 +8,20 @@ body{
   background-image: url(./IMG/bg-02.jpg);
   background-size: cover; 
   background-position: center;  
-  background-repeat: no-repeat;  
-  width: 100%;
-   
+  background-repeat: repeat;  
+  width: 100%;  
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 header{
     background-color: white;
     height: 7.5rem;
-    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); */
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 /*🟢 BARRA DE NAVEGAÇÃO 🟢*/
 header #navbar .home {
@@ -83,7 +89,7 @@ main #banner {
     background-image: url("./IMG/bg-01.jpg");
     background-size: cover; 
     background-position: center; 
-    background-repeat: no-repeat; 
+    background-repeat: repeat; 
     width: 100%; 
 }
 main #banner:hover {
@@ -145,7 +151,7 @@ main #banner .banner-content .banner-content-subtitle{
   }
 }
 /*⛔                   ⛔*/
-/*🟢PLANOS E MENSALIDADE🟢*/
+/*🟢 MENSALIDADE🟢*/
 main #banner .banner-content-ad {
     color: black;
     padding: 1rem; 
@@ -163,7 +169,7 @@ main #banner .banner-content-ad {
 }
 main #banner .banner-content-ad{
     margin: 25rem 0 3rem 5rem;
-    color: white;   
+    color: black;   
     padding: 1rem;
     border-radius: 2rem;
     font-size: 2.7rem;
@@ -176,8 +182,8 @@ main #banner .banner-content-ad{
 main #banner .banner-content-ad-title {
     font-size: 2.5rem;
     font-weight: 700;
-    font-family: "Iceberg", sans-serif;
-    color: whitesmoke;
+    font-family: "Dosis", sans-serif;
+    color: black;
     margin-bottom: 0.5rem;
 }
 main #banner .banner-content-ad-subtitle {
@@ -199,13 +205,13 @@ main #banner .banner-content-ad-subtitle {
     }
 }
 /*⛔                   ⛔*/
-/*🟢 BOTÃO DE PESQUISA 🟢*/
+/*🟢 BOTÃO DE PESQUISA E IMAGEM DA FACHADA   🟢*/
 main .lupa img {
     width: 6rem;
     height: auto;
     position: absolute;
-    top: 45%;
-    left: 44%;
+    top: 50%;
+    left: 70%;
     margin-top: 36.5rem;
     transform: translate(-360%, -10%);
 }
@@ -245,15 +251,14 @@ main .botao-container .botao-pesquisa button:hover {
 
 main .botao-container .botao-imagem {
     overflow: hidden;
-    border-radius: 2rem;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-    margin: 0 45rem 0 0 ;
+    margin: 0 80rem 0 0;
 }
 
 main .botao-container .botao-imagem img {
-    max-width: 40rem;
+    max-width: 35rem;
     height: auto;
-    border-radius: 2rem;
+    /* border-radius: 2rem; */
     opacity: 0.7;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
@@ -261,8 +266,82 @@ main .botao-container .botao-imagem img:hover {
     opacity: 1;
     transform: scale(1.02);
 }
-
-
-
 /*⛔                   ⛔*/
-/*🟢 CARD DE IMAGENS 🟢*/
+/*🟢 CARDS DAS IMAGENS 🟢*/
+main .container-cards {
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1.25rem;
+    transition: all 400ms;
+    margin: 0 0 0 60rem;
+    top: 140vh;
+    position: absolute ;
+}
+main .card{
+    flex: 1;
+    height: 100%;
+    transform: all 400ms;
+    cursor: pointer;
+}
+.card > img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card {
+    flex: 1;
+    height: 100%;
+    transition: all 400ms;
+    cursor: pointer;
+}
+.card:nth-child(odd){
+    translate: 0 -20px;
+}
+.card:nth-child(even){
+    translate: 0 20px;
+}
+.container:hover .card:not(:hover){
+    filter: grayscale(100%);
+}
+.card:hover{
+    flex: 3;
+}
+main .descricao h1{
+    font-family: 'Iceberg', sans-serif;
+    font-size: 5rem;
+    color: black;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: end;
+    top: 117vh;
+    left: 5rem;
+    position: absolute;
+}
+main .descricao p{
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    margin: 2rem 1.5rem 0;
+    display: flex;
+    top: 150vh;
+    left: 37rem;
+    position: absolute;
+}
+main .personal-descricao {
+    font-family: 'Iceberg', sans-serif;
+    font-size: 2rem;
+    color: black;
+    display: flex;
+    justify-content: end;
+    top: 63vw;
+    left: 5rem;
+    right: 5rem;
+    position: absolute;
+}
+/*⛔                   ⛔*/
+/*🟢 PLANOS 🟢*/
