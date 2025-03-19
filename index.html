@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
+     <!-- FONTES -->
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,11 +15,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- FIM DAS FONTES -->
+    <!-- ICONE -->
     <link rel="icon" href="./IMG/muscle.png" type="image/x-icon">
+    <!-- Linking Google fonts for icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- Linking SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <title>MUSCLE FITNESS</title>
 </head>
 <body>
-    <!-- CABEÇA -->
+    <!-- 🟢BARRA DE NAVEGAÇÃO| TOPO🟢 -->
     <header>  
         <nav id="navbar">
                 <div>
@@ -36,6 +43,7 @@
     </header>
     
     <main>
+        <!--🟢 BANNER INICIAL, IMG HOMEM CORRENDO E MARKETING| MEIO 🟢-->
         <section id="banner">
             <div class="banner-content">
                 <h1 class="banner-content-title">Busque ja sua saúde,</h1>
@@ -48,7 +56,8 @@
             </div>
             <img src="./IMG/man-running.png" alt="man running">
         </section>
-         <!-- BOTÃO DE PESQUISA  -->
+         <!--⛔ ⛔  -->
+         <!--🟢 BOTÃO DE PESQUISA E IMAGEM RECEPÇAO| MEIO 🟢 -->
          <div class="botao-container">
             <div class="botao-pesquisa"><button onclick="botaoPesquisa()">Pesquise sua academia mais perto</button>
             </div>
@@ -59,6 +68,8 @@
                 <img src="./IMG/fachada inicial.png" alt="">
             </div>
          </div>
+         <!--⛔ ⛔  -->
+         <!-- 🟢 CARDS EQUIPAMENTO E PERSONAL| PENULTIMO 🟢-->
          <div class="container-cards">
             <div class="card">
                 <img src="./IMG/equipamento-01.png" alt="">
@@ -78,12 +89,59 @@
             <p>Conheça nossos equipamentos <br> de ultima geração,<br> que vão te ajudar a alcançar <br>seus objetivos de forma mais rápida <br>e eficiente.</p>
             <h2 class="personal-descricao"> Com personal trainer sempre atento</h2>
          </div>
+         <!--⛔ ⛔  -->
+         <!-- 🟢 CARD  SWIPER 🟢 -->
+          <div class="container swiper">
+            <div class="card-box"></div>
+            <ul class="card-list">
+                <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                        <img src="./IMG/plano-basico.png" alt="Plano Basico" class="card-image" >
+                        <p class="badge badge-basic">Plano Básico.</p>
+                        <h2 class="card-title">Lorem ipsum dolor sit explicabo adipisicing elit</h2>
+                        <button class="card-button material-symbols-rounded">arrow_forward</button>
+                    </a>
+                </li>
+                <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                      <img src="./IMG/plano-intermediario.png" alt="Card Image" class="card-image">
+                      <p class="badge badge-intermediario">Plano Intermediário</p>
+                      <h2 class="card-title">Lorem ipsum dolor sit explicabo adipisicing elit</h2>
+                      <button class="card-button material-symbols-rounded">arrow_forward</button>
+                    </a>
+                  </li>
+                  <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                      <img src="./IMG/plano-avancado.png" alt="Card Image" class="card-image">
+                      <p class="badge badge-avançado">Plano Avançado</p>
+                      <h2 class="card-title">Lorem ipsum dolor sit explicabo adipisicing elit</h2>
+                      <button class="card-button material-symbols-rounded">arrow_forward</button>
+                    </a>
+                  </li>
+                  <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                      <img src="./IMG/plano-vip.png" alt="Card Image" class="card-image">
+                      <p class="badge badge-vip">Plano VIP</p>
+                      <h2 class="card-title">Lorem ipsum dolor sit explicabo adipisicing elit</h2>
+                      <button class="card-button material-symbols-rounded">arrow_forward</button>
+                    </a>
+                  </li>
+            </ul>
+            <!--🟢  PAGINAÇÃO🟢  -->
+            <div class="swiper-pagination"></div>
+            <!-- 🟢 BOTÕES DE NAVEGAÇÃO🟢  -->
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
+          </div>
     </main>
     
     <footer></footer>
+    <!--🟢 LINK JS 🟢  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
 </body>
 </html>
 
 <!-- ANOTAÇÕES: -->
-<!-- ⚠️ ⛔  -->
+<!-- ⚠️ 🟢 ⛔  -->
+<!--            -->
