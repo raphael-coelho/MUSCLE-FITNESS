@@ -345,90 +345,136 @@ main .personal-descricao {
     position: absolute;
 }
 /*⛔                   ⛔*/
-/*🟢 PLANOS 🟢*/
-main .container-swiper{
+/*🟢 PLANOS DE MENSALIDADE 🟢*/
+.card-wrapper {
+    position: relative;
     max-width: 1100px;
     margin: 0 60px 35px;
     padding: 20px 10px;
     overflow: hidden;
-}
-main  .card-list .card-item{
-    list-style: none;
-}
-main .card-list .card-item .card-link{
+  }
+
+  .card-list .card-item .card-link {
     display: block;
-    background-color: slategrey;
+    /* background: #fff; */
     padding: 18px;
     user-select: none;
     border-radius: 12px;
     text-decoration: none;
     border: 2px solid transparent;
-    box-shadow: 0 10px 10px rgb(0,0,0,0.05);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
     transition: 0.2s ease;
-}
-main .card-list .card-item .card-link:active{
+  }
+  
+  .card-list .card-item .card-link:active {
     cursor: grabbing;
-}
-main .card-list .card-item .card-link:hover{
-    border-color: black;
-}
-main .card-list .card-link .card-image{
+  }
+  
+  .card-list .card-item .card-link:hover {
+    border-color: #ffffff;
+  }
+  
+  .card-list .card-link .card-image {
     width: 100%;
     border-radius: 10px;
-    aspect-ratio: 16/9;
     object-fit: cover;
-}
-main .card-list .card-link .badge{
-  color: #5372F0;
-  width: fit-content;
-  padding: 8px 16px;
-  font-size: 0.95rem;
-  border-radius: 50px;
-  font-weight: 500;
-  background: #DDE4FF;
-  margin: 16px 0 18px;
-}
-main .card-list .card-link .badge-basic{
-    color: #B22485;
-    background: #F7DFF5;
-}
-main .card-list .card-link .badge-intermediario{
-    color: #B25A2B;
-    background: #FFE3D2;
-}
-main .card-list .card-link .badge-avançado{
-    color: #205C20;
+  }
+  
+  .card-list .card-link .badge {
+    color: #000000;
+    width: fit-content;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    border-radius: 50px;
+    font-weight: 500;
+    background: #2b4dd4;
+    margin: 16px 0 18px;
+  }
+  
+  .card-list .card-link .badge-basic {
+    color: #000000;
+    background: #ffffff;
+  }
+  
+  .card-list .card-link .badge-inter {
+    color: #000000;
     background: #D6F8D6;
-}
-main .card-list .card-link .badge-vip{
-    color: #856404;
-    background: #FFF3CD;
-}
-main .card-list .card-link .card-title{
-    color: black;
+  }
+  
+  .card-list .card-link .badge-adv {
+    color: #000000;
+    background: #44a544;
+  }
+  
+  .card-list .card-link .badge-vip {
+    color: #000000;
+    background: #ffc400;
+  }
+  
+  .card-list .card-link .card-title {
+    color: #000;
     font-size: 1.19rem;
-    font-weight: 700;
-}
-main .card-list .card-link .card-button {
+    font-weight: 600;
+  }
+  
+  .card-list .card-link .card-button {
     height: 35px;
     width: 35px;
-    color: #5372F0;
+    color: #000000;
     margin: 30px 0 5px;
     background: none;
     cursor: pointer;
     border-radius: 50%;
-    border: 2px solid #5372F0;
+    border: 2px solid #ffffff;
     transform: rotate(-45deg);
     transition: 0.4s ease;
   }
-  main .card-list .card-link:hover .card-button {
-    color: #fff;
-    background: #5372F0;
-}
-main .card-wrapper .swiper-pagination-bullet-active {
+  
+  .card-list .card-link:hover .card-button {
+    color: #000000;
+    background: #ffffff;
+  }
+  
+  .card-wrapper .swiper-pagination-bullet {
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: #ffffff;
+  }
+  
+  .card-wrapper .swiper-pagination-bullet-active {
     opacity: 1;
   }
-main .card-wrapper .swiper-slide-button {
-    color: #5372F0;
+  
+  .card-wrapper .swiper-slide-button {
+    color: #ffffff;
     margin-top: -35px;
   }
+  
+  /* RESPONSIVIDADE DOS PLANOS */
+  @media (max-width: 768px) {
+    .card-wrapper {
+      margin: 0 10px 25px;
+    }
+  
+    .card-wrapper .swiper-slide-button {
+      display: none;
+    }
+  }
+  /*⛔                   ⛔*/
+  /*🟢 CONTATO 🟢*/
+  main .contato  {
+    position: absolute;
+    font-family: 'Iceberg', sans-serif;
+    font-size: 1rem;
+    top: 210%;
+    left: 70%;
+  }
+  main .contato img{
+    animation: pulsar infinite 1s ease-in;
+    width: 90px;
+    top: 190%;
+    left: 100%;
+    position: relative;
+  }
+  /*⛔                   ⛔*/
